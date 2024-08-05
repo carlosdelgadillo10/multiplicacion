@@ -99,11 +99,11 @@ pipeline {
                 // Verifica si el servicio ya existe antes de exponerlo
                 // Verifica si el servicio ya existe y, si no, expónlo
                 sh '''
-                    if ! kubectl -n suma get service suma-deployment --ignore-not-found > /dev/null 2>&1; then
+                    if ! kubectl -n microservices-ci get service multi-deployment --ignore-not-found > /dev/null 2>&1; then
                         echo "El servicio no existe, exponiéndolo ahora..."
-                        kubectl -n suma expose deployment suma-deployment --type=NodePort --port=8085
+                        kubectl -n microservices-ci expose deployment multi-deployment --type=NodePort --port=8003
                     else
-                        echo "El servicio suma-deployment ya existe, no se necesita exponerlo nuevamente."
+                        echo "El servicio multi-deployment ya existe, no se necesita exponerlo nuevamente."
                     fi
                 '''
                 }
