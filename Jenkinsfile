@@ -55,9 +55,9 @@ pipeline {
                 script {
                     // Intenta detener y eliminar cualquier contenedor usando el puerto 8085
                     sh '''
-                    CONTAINER_ID=$(docker ps -q --filter "publish=8085")
+                    CONTAINER_ID=$(docker ps -q --filter "publish=8003")
                     if [ -n "$CONTAINER_ID" ]; then
-                        echo "Deteniendo el contenedor que usa el puerto 8085..."
+                        echo "Deteniendo el contenedor que usa el puerto 8003..."
                         docker stop $CONTAINER_ID
                         docker rm $CONTAINER_ID
                     fi
