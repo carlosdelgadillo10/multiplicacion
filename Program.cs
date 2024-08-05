@@ -1,28 +1,33 @@
 using Microsoft.AspNetCore.Mvc;
 
-var builder = WebApplication.CreateBuilder(args);
-
-builder.WebHost.ConfigureKestrel(serverOptions =>
+namespace MultiplicationApi.Controllers
 {
-    serverOptions.ListenAnyIP(8003); // Configurar la aplicación para escuchar en el puerto 8003
-});
+    [ApiController]
+    [Route("api/[controller]")]
+    public class MultiplyController : ControllerBase
+    {
+        [HttpPost]
+        public IActionResult Multiply([FromBody] MultiplicationRequest request)
+        {
+            if (request == null || request.Num1 == null || request.Num2 == null)
+            {
+                return BadRequest("Invalid input");
+            }
 
-var app = builder.Build();
+            double num1 = (double)request.Num1;
+            double num2 = (double)request.Num2;
+            double result = num1 * num2;
 
-app.MapGet("/", () => "Hello World!");
+            // Formatear el resultado a una cadena con un decimal
+            string formattedResult = result.ToString("F1");
 
-// Endpoint POST para multiplicar dos números
-app.MapPost("/multiply", (MultiplyRequest request) =>
-{
-    int result = request.num1 * request.num2;
-    return result;
-});
+            return Ok(formattedResult);
+        }
+    }
 
-app.Run();
-
-// Definir el modelo de solicitud fuera del método Main
-public class MultiplyRequest
-{
-    public int num1 { get; set; }
-    public int num2 { get; set; }
+    public class MultiplicationRequest
+    {
+        public double? Num1 { get; set; }
+        public double? Num2 { get; set; }
+    }
 }
