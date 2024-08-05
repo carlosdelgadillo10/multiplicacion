@@ -14,7 +14,8 @@ app.MapGet("/", () => "Hello World!");
 // Endpoint POST para multiplicar dos números
 app.MapPost("/multiply", (MultiplyRequest request) =>
 {
-    return request.num1 * request.num2
+    int result = request.num1 * request.num2;
+    return result;
 });
 
 app.Run();
