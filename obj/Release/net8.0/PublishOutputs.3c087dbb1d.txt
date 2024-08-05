@@ -1,0 +1,12 @@
+/home/carlosd/Desktop/p_python/microservices/multiplicacion/out/MultiplicationApi
+/home/carlosd/Desktop/p_python/microservices/multiplicacion/out/appsettings.Development.json
+/home/carlosd/Desktop/p_python/microservices/multiplicacion/out/appsettings.json
+/home/carlosd/Desktop/p_python/microservices/multiplicacion/out/MultiplicationApi.dll
+/home/carlosd/Desktop/p_python/microservices/multiplicacion/out/MultiplicationApi.deps.json
+/home/carlosd/Desktop/p_python/microservices/multiplicacion/out/MultiplicationApi.runtimeconfig.json
+/home/carlosd/Desktop/p_python/microservices/multiplicacion/out/MultiplicationApi.pdb
+/home/carlosd/Desktop/p_python/microservices/multiplicacion/out/Microsoft.AspNetCore.OpenApi.dll
+/home/carlosd/Desktop/p_python/microservices/multiplicacion/out/Microsoft.OpenApi.dll
+/home/carlosd/Desktop/p_python/microservices/multiplicacion/out/Swashbuckle.AspNetCore.Swagger.dll
+/home/carlosd/Desktop/p_python/microservices/multiplicacion/out/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/carlosd/Desktop/p_python/microservices/multiplicacion/out/Swashbuckle.AspNetCore.SwaggerUI.dll
