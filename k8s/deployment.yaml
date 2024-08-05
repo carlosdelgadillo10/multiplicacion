@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: multi
-        image: carlosdelgadillo/multi:latest
+        image: carlosdelgadillo/multi:v2
         ports:
         - containerPort: 8003
