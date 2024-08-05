@@ -15,7 +15,7 @@ app.MapGet("/", () => "Hello World!");
 app.MapPost("/multiply", (MultiplyRequest request) =>
 {
     int result = request.Num1 * request.Num2;
-    return Results.Ok(result);
+    return Results.Ok(new { result = result });
 });
 
 app.Run();
