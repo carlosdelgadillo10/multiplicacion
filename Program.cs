@@ -14,8 +14,7 @@ app.MapGet("/", () => "Hello World!");
 // Endpoint POST para multiplicar dos números
 app.MapPost("/multiply", (MultiplyRequest request) =>
 {
-    int result = request.Num1 * request.Num2;
-    return Results.Ok(new { result = result });
+    return request.num1 * request.num2
 });
 
 app.Run();
@@ -23,6 +22,6 @@ app.Run();
 // Definir el modelo de solicitud fuera del método Main
 public class MultiplyRequest
 {
-    public int Num1 { get; set; }
-    public int Num2 { get; set; }
+    public int num1 { get; set; }
+    public int num2 { get; set; }
 }
