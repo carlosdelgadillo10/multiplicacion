@@ -71,7 +71,7 @@ pipeline {
                     // sh 'docker run -d -p 8001:8001 carlosdelgadillo/sumaa'
                 }
             }
-        }*/
+        }
         stage('Push image') {
             steps {
                 script {
