@@ -460,19 +460,19 @@
     ]
   },
   "packageFolders": {
-    "/home/carlos/.nuget/packages/": {}
+    "/home/carlosd/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/carlos/Desktop/p_python/microservicios/MultiplicationApi/MultiplicationApi.csproj",
+      "projectUniqueName": "/home/carlosd/Desktop/p_python/microservices/multiplicacion/MultiplicationApi.csproj",
       "projectName": "MultiplicationApi",
-      "projectPath": "/home/carlos/Desktop/p_python/microservicios/MultiplicationApi/MultiplicationApi.csproj",
-      "packagesPath": "/home/carlos/.nuget/packages/",
-      "outputPath": "/home/carlos/Desktop/p_python/microservicios/MultiplicationApi/obj/",
+      "projectPath": "/home/carlosd/Desktop/p_python/microservices/multiplicacion/MultiplicationApi.csproj",
+      "packagesPath": "/home/carlosd/.nuget/packages/",
+      "outputPath": "/home/carlosd/Desktop/p_python/microservices/multiplicacion/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/carlos/.nuget/NuGet/NuGet.Config"
+        "/home/carlosd/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

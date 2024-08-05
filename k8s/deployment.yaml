@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: multi-deployment
+  namespace: microservices-ci
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: multi
+  template:
+    metadata:
+      labels:
+        app: multi
+    spec:
+      containers:
+      - name: multi
+        image: carlosdelgadillo/multi:latest
+        ports:
+        - containerPort: 8003

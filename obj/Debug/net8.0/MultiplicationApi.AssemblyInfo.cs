@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MultiplicationApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf5bfa708086311f836c24d79f76b07ac488a4a1")]
 [assembly: System.Reflection.AssemblyProductAttribute("MultiplicationApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MultiplicationApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
